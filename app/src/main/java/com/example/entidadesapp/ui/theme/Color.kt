@@ -2,6 +2,10 @@ package com.example.entidadesapp.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
+val BluePrimary = Color(0xFF1E3A5F)
+val BlueSecondary = Color(0xFF3B82F6)
+val LightBackground = Color(0xFFF8FAFC)
+
 val Purple80 = Color(0xFFD0BCFF)
 val PurpleGrey80 = Color(0xFFCCC2DC)
 val Pink80 = Color(0xFFEFB8C8)
