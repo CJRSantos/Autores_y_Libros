@@ -20,6 +20,12 @@ class AuthorViewModel(private val authorDao: AuthorDao) : ViewModel() {
         }
     }
 
+    fun updateAuthor(author: AuthorEntity) {
+        viewModelScope.launch {
+            authorDao.updateAuthor(author)
+        }
+    }
+
     fun deleteAuthor(author: AuthorEntity) {
         viewModelScope.launch {
             authorDao.deleteAuthor(author)
