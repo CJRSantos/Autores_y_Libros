@@ -51,6 +51,7 @@ enciando a AuthorEntity).
 
 4.  Target SDK: **API 35**.
 
----
 
 **Desarrollado como proyecto de aprendizaje en arquitectura MVVM y persistencia de datos.**
+
+
