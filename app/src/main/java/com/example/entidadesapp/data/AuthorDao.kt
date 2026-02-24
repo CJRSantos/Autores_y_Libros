@@ -11,6 +11,9 @@ interface AuthorDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertAuthor(author: AuthorEntity)
 
+    @Update
+    suspend fun updateAuthor(author: AuthorEntity)
+
     @Delete
     suspend fun deleteAuthor(author: AuthorEntity)
 }
