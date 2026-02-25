@@ -12,7 +12,8 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // Inicializa la base de datos con migración destructiva para reflejar el cambio de dominio
+        // Inicializa la base de datos
+        // Usamos fallbackToDestructiveMigration() para evitar crashes si el esquema cambia durante el desarrollo
         val db = Room.databaseBuilder(
             applicationContext,
             AppDatabase::class.java,
